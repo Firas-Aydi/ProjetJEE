@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Bon de livraison</title>
+
+</head>
+
+<body style="background:#e3f2fd;">
+    <div class="row ">
+        <div class="col-2">
+            <div class="list-group list-group-flush" style="width: 112%;">
+                <a href="#" class="list-group-item list-group-item-action active" style="height: 57px;">Ventes</a>
+                <a href="#" class="list-group-item list-group-item-action">Devis</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de commande</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de livraison</a>
+                <a href="#" class="list-group-item list-group-item-action">Factures</a>
+                <a href="#" class="list-group-item list-group-item-action">Client</a>
+                <a href="#" class="list-group-item list-group-item-action">Fournisseur</a>
+                <a href="#" class="list-group-item list-group-item-action">Gérer utilisateur</a>
+                <a href="#" class="list-group-item list-group-item-action">Produit</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <nav class="navbar navbar-dark bg-primary border border-dark border-top-0 mb-2">
+                <span class="navbar-brand mb-0 h1 "><i class="fas fa-shopping-cart"></i> Bon de livraison/ Modifier A0001 </span>
+                <span class="navbar-brand mb-0 h1"><i class="fas fa-plus-circle"></i></span>
+            </nav>
+            <div class="alert alert-success alert-dismissible fade show m-1" role="alert">
+                Cliquez seu le bouton "Enregistrer" pour terminer la créationde de : Bon de livraison A0001
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            <form class="m-3 p-4 bg-light"  style="background:#ffffff;  border-radius: 15px;">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputClient">Client</label>
+                        <select id="inputClient" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputDocument">Document n°</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputLieu">Lieu de vente</label>
+                        <select id="inputLieu" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputAttention">A l'attention de</label>
+                        <input type="text" class="form-control" id="inputAttention">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputRéférence">Référance externe</label>
+                        <input type="text" class="form-control" id="inputRéférence">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputSaison">Saison</label>
+                        <select id="inputSaison" class="form-control">
+                            <option selected>-Aucun-</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div style="border-top: 2px solid #cccccc;"></div>
+            <form class="m-3 p-4 bg-light"  style="background:#ffffff;  border-radius: 15px;">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputGestionnaire">Gestionnaire de compte</label>
+                        <select id="inputGestionnaire" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div style="border-top: 2px solid #cccccc;"></div>
+            <form class="m-3 p-4 bg-light"  style="background:#ffffff;  border-radius: 15px;">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputDate">Date de livraison</label>
+                        <input type="date" class="form-control" id="inputDate">
+                    </div>
+                </div>
+            </form>
+            <div style="border-top: 2px solid #cccccc;"></div>
+            <form class="m-3 p-4 bg-light" style="background:#ffffff;  border-radius: 15px;">
+            <table class="table col-11 table-bordered">
+                <thead class="bg-primary text-light">
+                    <tr>
+                        <th scope="col">Produit ou Service</th>
+                        <th scope="col" style="width: 700px;">Description</th>
+                        <th scope="col" style="width: 100px;">Qté</th>
+                        <th scope="col" style="width: 100px;">Stock réel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input list="browsers" name="browser" id="browser" class="form-control">
+                            <datalist id="browsers">
+                                <option value="...">
+                            </datalist>
+                        </td>
+                        <td><textarea id="subject" name="subject" style="height: 38px; " class="form-control"></textarea></td>
+                        <td><input type="number" class="form-control"></td>
+                        <td><input type="number" class="form-control"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+                <div class="form-group row">
+                    <label for="inputQuantitéTT" class="col-form-label ml-3 mr-3">Quantité totale</label>
+                    <div class="">
+                      <input type="number" class="form-control" id="inputQuantitéTT" >
+                    </div>
+                  </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

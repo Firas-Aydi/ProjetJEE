@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Client</title>
+</head>
+
+<body style="background:#e3f2fd;">
+    <div class="row ">
+        <div class="col-2">
+            <div class="list-group list-group-flush" style="width: 112%;">
+                <a href="#" class="list-group-item list-group-item-action active" style="height: 57px;">Ventes</a>
+                <a href="#" class="list-group-item list-group-item-action">Devis</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de commande</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de livraison</a>
+                <a href="#" class="list-group-item list-group-item-action">Factures</a>
+                <a href="#" class="list-group-item list-group-item-action">Client</a>
+                <a href="#" class="list-group-item list-group-item-action">Fournisseur</a>
+                <a href="#" class="list-group-item list-group-item-action">Gérer utilisateur</a>
+                <a href="#" class="list-group-item list-group-item-action">Produit</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <nav class="navbar navbar-dark bg-primary border border-dark border-top-0 mb-2">
+                <span class="navbar-brand mb-0 h1 "><i class="fas fa-user"></i> Clients </span>
+                <p>search</p>
+                <span class="navbar-brand mb-0 h1"><i class="fas fa-plus-circle"></i></span>
+            </nav>
+            <form class="m-3 p-4 bg-white" style="  border-radius: 15px;">
+                <button type="button" class="btn btn-primary mb-3 float-right">Ajouter</button>
+                <table class="table col-11 table-bordered">
+                    <thead class="bg-primary text-light">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th style="width: 150px;" scope="col">Nom et Prénom</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Adresse</th>
+                            <th scope="col">Telephone</th>
+                            <th scope="col">Statut</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Devise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Foulen Ben Foulen</td>
+                            <td>Foulen@gmail.com</td>
+                            <td>son Adresse</td>
+                            <td>22222222</td>
+                            <td>son Statut</td>
+                            <td>grossiste</td>
+                            <td>dinar</td>
+                            <td style="width: 200px;"><button type="button"
+                                    class="btn btn-primary btn-sm">Modifier</button>
+                                <button type="button" class="btn btn-primary btn-sm">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Foulen Ben Foulen</td>
+                            <td>Foulen@gmail.com</td>
+                            <td>son Adresse</td>
+                            <td>22222222</td>
+                            <td>son Statut</td>
+                            <td>grossiste</td>
+                            <td>dinar</td>
+                            <td style="width: 200px;"><button type="button"
+                                    class="btn btn-primary btn-sm">Modifier</button>
+                                <button type="button" class="btn btn-primary btn-sm">Supprimer</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
