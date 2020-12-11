@@ -1,0 +1,21 @@
+body{
+    background:#e3f2fd;
+}
+.list-group{
+    width: 112%;
+}
+#iVentes{
+    height: 57px;
+}
+#f{
+    border-radius: 15px;
+}
+#fTable{
+    border-radius: 15px;
+}
+#thNom{
+    width: 150px;
+}
+#tdButton{
+    width: 200px;
+}
