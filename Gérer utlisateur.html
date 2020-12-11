@@ -8,6 +8,7 @@
     <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="Form_Ajouter.js"></script>
     <title>Gérer utilisateur</title>
 </head>
 
@@ -29,17 +30,10 @@
         <div class="col-10">
             <nav class="navbar navbar-dark bg-primary border border-dark border-top-0 mb-2">
                 <span class="navbar-brand mb-0 h1 "><i class="fas fa-user-tie"></i> Gérer utilisateur </span>
-                <span class="navbar-brand mb-0 h1"><i class="fas fa-plus-circle" id="a"></i>
+                <span class="navbar-brand mb-0 h1"><i class="fas fa-plus-circle" id="p"></i> <i
+                        class="fas fa-minus-circle" id="m"></i>
                 </span>
             </nav>
-            <script>
-                $(document).ready(function () {
-                    $('#f').hide();
-                    $('#a').click(function () {
-                        $('#f').show();
-                    });
-                });
-            </script>
             <form id="f" class="m-3 p-4 bg-white" style=" border-radius: 15px;">
                 <div class="form-row">
                     <div class="form-group col-md-4">
@@ -68,21 +62,24 @@
                             <td>Foulen Ben Foulen</td>
                             <td>son role</td>
                             <td style="width: 250px;"><button type="button" class="btn btn-primary">Modifier</button>
-                                <button type="button" class="btn btn-primary">Supprimer</button></td>
+                                <button type="button" class="btn btn-primary">Supprimer</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Foulen Ben Foulen</td>
                             <td>son role</td>
                             <td style="width: 250px;"><button type="button" class="btn btn-primary">Modifier</button>
-                                <button type="button" class="btn btn-primary">Supprimer</button></td>
+                                <button type="button" class="btn btn-primary">Supprimer</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Foulen Ben Foulen</td>
                             <td>son role</td>
                             <td style="width: 250px;"><button type="button" class="btn btn-primary">Modifier</button>
-                                <button type="button" class="btn btn-primary">Supprimer</button></td>
+                                <button type="button" class="btn btn-primary">Supprimer</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
