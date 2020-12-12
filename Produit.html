@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projet.css">
+    <script src="Form_Ajouter.js"></script>
+    <title>Produit</title>
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-2">
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action active" id="iVentes">Ventes</a>
+                <a href="#" class="list-group-item list-group-item-action">Devis</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de commande</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de livraison</a>
+                <a href="#" class="list-group-item list-group-item-action">Factures</a>
+                <a href="#" class="list-group-item list-group-item-action">Client</a>
+                <a href="#" class="list-group-item list-group-item-action">Fournisseur</a>
+                <a href="#" class="list-group-item list-group-item-action">Gérer utilisateur</a>
+                <a href="#" class="list-group-item list-group-item-action">Produit</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <nav class="navbar navbar-dark bg-primary border border-dark border-top-0 mb-2">
+                <span class="navbar-brand mb-0 h1 "><i class="fab fa-product-hunt"></i> Produits </span>
+                <p>search</p>
+                <span class="navbar-brand mb-0 h1"><i class="fas fa-plus-circle" id="p"></i> <i
+                        class="fas fa-minus-circle" id="m"></i></span>
+            </nav>
+            <form id="f" class="m-3 p-4 bg-white">
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <input type="file" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Nom du Produit</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Pays</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Fournisseur</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Prix Achat</label>
+                        <input type="number" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Prix Vente</label>
+                        <input type="number" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Réapprovisionnement</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Délai de Consommation</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Catégorie</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputDocument">Lieu de Stock</label>
+                        <input type="text" class="form-control" id="inputDocument">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Ajouter</button>
+            </form>
+            <form class="m-3 p-4 bg-white" id="fTable">
+                <table class="table col-12 table-bordered">
+                    <thead class="bg-primary text-light">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nom du Produit</th>
+                            <th scope="col">Pays</th>
+                            <th scope="col">Fournisseur</th>
+                            <th scope="col">Prix Achat</th>
+                            <th scope="col">Prix Vente</th>
+                            <th scope="col">Réapprovi-sionnement</th>
+                            <th scope="col">Délai de Consommation</th>
+                            <th scope="col">Catégorie</th>
+                            <th scope="col">Lieu de Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td id="tdButton"><button type="button" class="btn btn-primary btn-sm">Modifier</button>
+                                <button type="button" class="btn btn-primary btn-sm">Supprimer</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-primary btn-sm">Modifier</button>
+                                <button type="button" class="btn btn-primary btn-sm">Supprimer</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
