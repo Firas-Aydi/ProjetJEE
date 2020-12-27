@@ -17,3 +17,15 @@ body{
 #tdButton{
     width: 185px;
 }
+#border{
+    border-top: 2px solid #cccccc;
+}
+#thLiv{
+width: 100px;
+}
+#thLDesc{
+    width: 700px;
+}
+#subject{
+    height: 38px;
+}
