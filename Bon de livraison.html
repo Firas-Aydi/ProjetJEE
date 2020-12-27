@@ -8,15 +8,16 @@
     <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projet.css">
     <title>Bon de livraison</title>
 
 </head>
 
-<body style="background:#e3f2fd;">
+<body>
     <div class="row ">
         <div class="col-2">
-            <div class="list-group list-group-flush" style="width: 112%;">
-                <a href="#" class="list-group-item list-group-item-action active" style="height: 57px;">Ventes</a>
+            <div class="list-group list-group-flush" >
+                <a href="#" class="list-group-item list-group-item-action active" id="iVentes">Ventes</a>
                 <a href="#" class="list-group-item list-group-item-action">Devis</a>
                 <a href="#" class="list-group-item list-group-item-action">Bons de commande</a>
                 <a href="#" class="list-group-item list-group-item-action">Bons de livraison</a>
@@ -38,7 +39,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-            <form class="m-3 p-4 bg-light"  style="background:#ffffff;  border-radius: 15px;">
+            <form id="f" class="m-3 p-4 bg-light">
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputClient">Client</label>
@@ -79,8 +80,8 @@
                     </div>
                 </div>
             </form>
-            <div style="border-top: 2px solid #cccccc;"></div>
-            <form class="m-3 p-4 bg-light"  style="background:#ffffff;  border-radius: 15px;">
+            <div id="border"></div>
+            <form class="m-3 p-4 bg-light" id="fTable">
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputGestionnaire">Gestionnaire de compte</label>
@@ -91,8 +92,8 @@
                     </div>
                 </div>
             </form>
-            <div style="border-top: 2px solid #cccccc;"></div>
-            <form class="m-3 p-4 bg-light"  style="background:#ffffff;  border-radius: 15px;">
+            <div id="border"></div>
+            <form class="m-3 p-4 bg-light" id="fTable">
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="inputDate">Date de livraison</label>
@@ -100,15 +101,15 @@
                     </div>
                 </div>
             </form>
-            <div style="border-top: 2px solid #cccccc;"></div>
-            <form class="m-3 p-4 bg-light" style="background:#ffffff;  border-radius: 15px;">
+            <div id="border"></div>
+            <form class="m-3 p-4 bg-light" id="fTable">
             <table class="table col-11 table-bordered">
                 <thead class="bg-primary text-light">
                     <tr>
                         <th scope="col">Produit ou Service</th>
-                        <th scope="col" style="width: 700px;">Description</th>
-                        <th scope="col" style="width: 100px;">Qté</th>
-                        <th scope="col" style="width: 100px;">Stock réel</th>
+                        <th scope="col" id="thLDesc">Description</th>
+                        <th scope="col" id="thLiv">Qté</th>
+                        <th scope="col" id="thLiv">Stock réel</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -118,7 +119,7 @@
                                 <option value="...">
                             </datalist>
                         </td>
-                        <td><textarea id="subject" name="subject" style="height: 38px; " class="form-control"></textarea></td>
+                        <td><textarea id="subject" name="subject" class="form-control"></textarea></td>
                         <td><input type="number" class="form-control"></td>
                         <td><input type="number" class="form-control"></td>
                     </tr>
