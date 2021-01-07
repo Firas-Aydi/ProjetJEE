@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.3.1.slim.min.js"></script>
+  <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="projet.css">
+  <title>Créer devis</title>
+</head>
+
+<body>
+  <div class="row ">
+    <div class="col-2">
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action active" id="iVentes">Ventes</a>
+        <a href="#" class="list-group-item list-group-item-action">Devis</a>
+        <a href="#" class="list-group-item list-group-item-action">Bons de commande</a>
+        <a href="#" class="list-group-item list-group-item-action">Bons de livraison</a>
+        <a href="#" class="list-group-item list-group-item-action">Factures</a>
+        <a href="#" class="list-group-item list-group-item-action">Retours produit</a>
+        <a href="#" class="list-group-item list-group-item-action">Avoirs</a>
+        <a href="#" class="list-group-item list-group-item-action">Abonnements</a>
+        <a href="#" class="list-group-item list-group-item-action">Remboursements</a>
+      </div>
+    </div>
+    <div class="col-10">
+      <nav class="navbar navbar-dark bg-primary border border-dark border-top-0 mb-2">
+        <span class="navbar-brand mb-0 h1 "><i class="fas fa-shopping-cart"></i> Devis / créer devis </span>
+        <span class="navbar-brand mb-0 h1">
+          <button type="button" class="btn btn-info btn-sm " id="EnrAnn">Annuler</button>
+          <button type="button" class="btn btn-info btn-sm mr-5" id="EnrAnn">Enregistrer</button>
+          <i class="fas fa-plus-circle"></i></span>
+      </nav>
+
+      <div class="alert alert-success alert-dismissible fade show m-1" role="alert">
+        Cliquez seu le bouton "Enregistrer" pour terminer la créationde de : 
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <form class="m-3 p-4 bg-white" id="fTable">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputClient">Client</label>
+            <select id="inputClient" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputDocument">Document n°</label>
+            <input type="text" class="form-control" id="inputDocument">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputLieu">Lieu de vente</label>
+            <select id="inputLieu" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputDateExpiration">date d'expiration</label>
+            <input type="text" class="form-control" id="inputDateExpiration">
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputAttention">A l'attention de</label>
+            <input type="text" class="form-control" id="inputAttention">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputRéférence">Référance externe</label>
+            <input type="text" class="form-control" id="inputRéférence">
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="inputSaison">Saison</label>
+            <select id="inputSaison" class="form-control">
+              <option selected>-Aucun-</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+
+      </form>
+      <div id="border"></div>
+      <form class="m-3 p-4 bg-white" id="fTable">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputDevise">Devise*</label>
+            <select id="inputDevise" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputRemise">Remise</label>
+            <input type="texte" class="form-control" id="inputRemise" required>
+            <button type="button" class="btn btn-outline-primary" style="height: 37px"><i class="fas fa-percent"></i></button>
+            <button type="button" class="btn btn-outline-primary" style="height: 37px"><i class="fas fa-sync-alt"></i></button>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputTaxes">Taxes</label>
+            <select id="inputDevise" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+            <button type="button" class="btn btn-outline-primary" style="height: 37px"><i class="fas fa-sync-alt"></i></button>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputGestionnaire">Gestionnaire de compte</label>
+            <select id="inputGestionnaire" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 mb-5">
+            <label for="inputTypeDeTaxe">Type de taxe</label>
+            <select id="inputTypeDeTaxe" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-5">
+            <label for="inputNiveauDePrix">Niveau de prix</label>
+            <select id="inputNiveauDePrix" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div id="border"></div>
+      <form class="m-3 p-4 bg-white" id="fTable">
+        <div class="form-row">
+          <div class="col-md-4 mb-5">
+            <label for="inputDateLivraison">Date livraison </label>
+            <input type="texte" class="form-control fix-rounded-right" style="height: 37px" required>
+          </div>
+          <div class="col-md-4 mb-5">
+            <label for="inputCout">Cout de livraison et manutanition</label>
+            <input type="texte" class="form-control fix-rounded-right" style="height: 37px" required>
+          </div>
+          <div class="col-md-4 mb-5">
+            <label for="inputTaxeDeLivraison">Taxes de livraison</label>
+            <select id="inputDevise" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+            
+          </div>
+        </div>
+
+      </form>
+      <div id="border"></div>
+      <form class="m-3 p-4 bg-white" id="fTable">
+        <table class="table col-12 table-bordered">
+          <thead class="bg-primary text-light">
+            <tr>
+              <th scope="col">Produit ou Service</th>
+              <th scope="col">Description</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Quantité</th>
+              <th scope="col" colspan="2">Remise</th>
+              <th scope="col">Taxes</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><input class="form-control" type="search" placeholder="Search"></th>
+              <td> <textarea id="subject" name="subject" class="form-control"></textarea></td>
+              <td> 0.00</td>
+              <td>0</td>
+              <td> 0.00</td>
+              <td>%</td>
+              <td>13%</td>
+              <td>0</td>
+              <td id="tdButton"><button type="button" class="btn btn-primary btn-sm">Supprimer</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button class="btn btn-primary mr-2" type="submit" >Ajouter de multiple produit</button>
+        <button type="button" class="btn btn-primary mr-2" data-toggle="button" aria-pressed="false"
+          >
+          créer un produit</button>
+        <button type="button" class="btn btn-primary mr-2" data-toggle="button" aria-pressed="false"
+          >
+          supprimer
+        </button>
+        <button type="button" class="btn btn-primary mr-2" data-toggle="button" aria-pressed="false"
+          >
+          créer un service
+        </button>
+
+      </form>
+
+      <div id="border"></div>
+
+      <form class="m-3 p-4 bg-white" id="fTable">
+        <div class="form-group ">
+
+          <label class=""> Remise Global :</label>
+          <input type="number" class="" id="remise"><br>
+          <label class="">Quantité total : </label>
+          <input type="number" class="" id="quantité"><br>
+          <label class=""> SousTotal :</label>
+          <input type="number" class="" id="sous_total"><br>
+          <label class=""> Total : </label>
+          <input type="number" class="" id="total"><br>
+        </div>
+
+
+
+    </div>
+    </form>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>
