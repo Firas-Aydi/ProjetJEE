@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projet.css">
+    <script src="Form_Ajouter.js"></script>
+    <title>Devis</title>
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-2">
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action active" id="iVentes">Ventes</a>
+                <a href="#" class="list-group-item list-group-item-action">Devis</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de commande</a>
+                <a href="#" class="list-group-item list-group-item-action">Bons de livraison</a>
+                <a href="#" class="list-group-item list-group-item-action">Factures</a>
+                <a href="#" class="list-group-item list-group-item-action">Client</a>
+                <a href="#" class="list-group-item list-group-item-action">Fournisseur</a>
+                <a href="#" class="list-group-item list-group-item-action">Gérer utilisateur</a>
+                <a href="#" class="list-group-item list-group-item-action">Produit</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <nav class="navbar navbar-dark bg-primary border border-dark border-top-0 mb-2">
+                <span class="navbar-brand mb-0 h1 "><i class="fas fa-shopping-cart"></i> Devis </span>
+                <span class="navbar-brand mb-0 h1"><i class="fas fa-plus-circle"></i></span>
+            </nav>
+            <div class="m-3 p-4 bg-white" id="fTable">
+                <button type="button" class="btn btn-primary" id="p">Afficher les filtres</button>
+                <form id="f" class="form-group col-md-4 mt-3">
+                    <input type="text" class="form-control" id="inputDocument" placeholder="Devis">
+                </form>
+            </div>
+            <form class="m-3 p-4 bg-white" id="fTable">
+                <div class="form-group col-md-4">
+                <select id="inputClient" class="form-control">
+                    <option selected>Choisir un opération</option>
+                    <option>...</option>
+                  </select>
+                  <button  type="button" class="btn btn-primary mt-3">Exécuter</button>
+                </div>
+                <table class="table col-12 table-bordered">
+                    <thead class="bg-primary text-light">
+                        <tr>
+                            <th scope="col">Devis</th>
+                            <th scope="col">Client</th>
+                            <th scope="col">Lieu de stockage</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Quantité totale</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Foulen Ben Foulen</td>
+                            <td> principal</td>
+                            <td>Il y a 5 min 42 sec</td>
+                            <td>37</td>
+                            <td>0.00</td>
+                            <td>Accepté et transformé</td>
+                            <td id="tdButton"><button type="button" class="btn btn-primary btn-sm">Modifier</button>
+                                <button type="button" class="btn btn-primary btn-sm">Supprimer</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
